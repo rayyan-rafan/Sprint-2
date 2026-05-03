@@ -7,7 +7,7 @@ This sprint focuses on containerizing the Django application using Docker, runni
 
 ## 🧱 Tech Stack
 
-- Backend: Django (Python 3.12)
+- Backend: Django (Python 3.10)
 - Database: MySQL / RDS
 - Containerization: Docker, Docker Compose
 - CI/CD: GitHub Actions
