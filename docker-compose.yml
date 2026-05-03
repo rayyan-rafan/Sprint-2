@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    volumes:
+      - ./:/app
+    working_dir: /app/blog_project
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_HOST=coursera-mysql-instance.ci72ci0ewyvm.us-east-1.rds.amazonaws.com
+      - DB_NAME=blog_db
+      - DB_USER=coursera
+      - DB_PASSWORD=coursera
